@@ -1,0 +1,17 @@
+三种方法：
+1、标准化
+Y=(X-mean)/std，对于每列来说所有数据都聚集在0附近，方差为1 
+程序：
+min_max_scaler = preprocessing.StandardScaler()
+x_train_minmax = min_max_scaler.fit_transform(x_train)
+
+2、归一化
+将属性缩放到一个指定的最大和最小值（通常是1-0）之间
+程序：
+min_max_scaler = preprocessing.MinMaxScaler() 
+X_train_minmax = min_max_scaler.fit_transform(X_train)
+
+3、正则化
+将每个样本缩放到单位范数（每个样本的范数为1）
+normalizer = preprocessing.Normalizer().fit(X)
+normalizer.transform(X)

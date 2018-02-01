@@ -1,0 +1,14 @@
+输入：
+y_test：输出真实值
+y_pred：输出预测值
+输出：
+F1：F1分数
+功能：
+衡量二分类模型精确度的一种指标，兼顾了分类模型的准确率与召回率。
+Python：
+tn, fp, fn, tp = confusion_matrix(y_test,y_pred).ravel()
+TPR=tp/(tp+fn);
+SPC=tn/(fp+tn);
+PPV=tp/(tp+fp);
+NPV=tn/(tn+fn);
+Fscore=2*TPR*PPV/(TPR+PPV)

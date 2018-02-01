@@ -1,0 +1,14 @@
+输入：
+y_test：输出真实值
+y_pred：输出预测值
+输出：
+ACC：准确率
+功能：
+可查看模型分类准确率
+Python：
+tn, fp, fn, tp = confusion_matrix(y_test,y_pred).ravel()
+TPR=tp/(tp+fn);
+SPC=tn/(fp+tn);
+PPV=tp/(tp+fp);
+NPV=tn/(tn+fn);
+ACC=(tp+tn)/(tn+fp+fn+tp)

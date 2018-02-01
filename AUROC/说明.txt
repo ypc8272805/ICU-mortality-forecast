@@ -1,0 +1,9 @@
+输入：
+y_test：输出真实值
+y_scor：输出风险值
+输出：
+test_auc：特征曲线下面积AUROC
+功能：
+可查看模型辨识准确率
+Python：
+test_auc = metrics.roc_auc_score(y_test,y_scor)

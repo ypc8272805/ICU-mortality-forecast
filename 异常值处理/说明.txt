@@ -1,0 +1,13 @@
+首先，在SQL提取数据时规定变量范围
+HR：0~300
+Resprate：0~70
+TempF：70~120
+TempC：10~50
+Spo2:0~100
+Fio2:0~100
+Nisysbp:0~400
+Nidiasbp:0~300
+Nimeanbp:0~300
+GCS:0~15
+其次查看其频数分布图（hist）与散点图（plot）
+最后可利用summary()计算各变量的描述性统计量

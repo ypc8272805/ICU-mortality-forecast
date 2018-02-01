@@ -1,0 +1,17 @@
+sofa：连续性器官衰竭评估
+sofa.sql:运行该脚本可得每个变量的分数情况、评分总和。
+运行该脚本首先应创建一系列的物化视图
+1、echodata - concepts/echo-data.sql
+2、ventdurations - concepts/ventilation-durations.sql
+3、vitalsfirstday - concepts/firstday/vitals-first-day.sql
+4、uofirstday - concepts/firstday/urine-output-first-day.sql
+5、ventfirstday - concepts/firstday/ventilated-first-day.sql
+6、gcsfirstday - concepts/firstday/gcs-first-day.sql
+7、labsfirstday - concepts/firstday/labs-first-day.sql
+8、bloodgasfirstday - concepts/firstday/blood-gas-first-day.sql 
+9、bloodgasfirstdayarterial - concepts/firstday/blood-gas-first-day-arterial.sql
+
+sofarisk：运行该脚本可得0-1之间死亡风险值
+SOFALABEL：运行该脚本可得分类值和各指标评价结果
+
+慎用：It is stressed that the score is not meant as a direct predictor of mortality but rather a measure of morbidity, or the level of the diseased state, in a patient. 
